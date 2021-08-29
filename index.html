@@ -51,13 +51,20 @@
             </a>
           </li>
         </ul>
-        <!-- <button type="button" class="menu-button">
-            <svg width="24" height="16">
-              <use href="./images/icon/sprite.svg#icon-menu"></use>
-              <use href="./images/icon/sprite.svg#icon-close"></use>
-            </svg>
-        </button> -->
+        <button
+          js-menu-container
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu-contaier"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icon/sprite.svg#icon-menu"></use>
+            <use class="icon-close" href="./images/icon/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
+      <div class="menu-container is-open" id="menu-container">Контент меню</div>
     </header>
     <main>
       <!--Герой-->
@@ -478,5 +485,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

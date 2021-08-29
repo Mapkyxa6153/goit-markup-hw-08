@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import './base/normalize';
 @import './utils/variables';
+@import './base/normalize';
 @import './utils/utils';
 @import './layout/header';
 @import './layout/hero';
@@ -22,9 +22,3 @@
 
 // FORMS
 @import './utils/forms';
-
-body {
-  color: $primary-text-color;
-  background-color: $background-color;
-  font-family: Roboto, sans-serif;
-}
