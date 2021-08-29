@@ -1,0 +1,70 @@
+/* strengths */
+.strenghts {
+  margin-top: 0;
+}
+
+.strenghts-section {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.strenghts-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.strenghts-section__item {
+  margin-left: 30px;
+  max-width: 270px;
+}
+
+.strenghts-section__item {
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.strengths-section__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.strengths-section__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-colort;
+}
+
+.strenghts-section__thumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: $background-color-tertiary;
+}
+
+.strenghts-section__icon {
+  width: 70px;
+  height: 70px;
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/utils';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/strenghts';
+@import './layout/services';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/footer';
+
+// PORTFOLIO
+@import './layout/works';
+
+// MODAL WINDOW
+@import './utils/modal-window';
+
+// BTNS
+@import './utils/buttons';
+
+// FORMS
+@import './utils/forms';
+
+body {
+  color: $primary-text-color;
+  background-color: $background-color;
+  font-family: Roboto, sans-serif;
+}

@@ -1,0 +1,61 @@
+/* loyal customers */
+
+.customers {
+  padding: 94px 0;
+}
+
+.customers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.customers__link {
+  display: block;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  -webkit-transition: background-color 250ms $timing-function, fill 250ms $timing-function;
+  transition: background-color 250ms $timing-function, fill 250ms $timing-function;
+}
+.customers__link {
+  &:hover {
+    fill: $accent-text-color;
+    border-color: $accent-text-color;
+  }
+}
+.customers__link {
+  &:focus {
+    fill: $accent-text-color;
+    color: $accent-text-color;
+    border-color: $accent-text-color;
+  }
+}
+.customers__icon {
+  display: block;
+  width: 106px;
+  height: 60px;
+}
