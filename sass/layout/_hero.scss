@@ -19,15 +19,15 @@
   background-position: center;
   background-size: cover;
   background-color: $background-color-secondary;
-}
 
-.hero-section__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: $background-color;
-  font-size: 44px;
-  line-height: 1.36;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $background-color;
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
 }

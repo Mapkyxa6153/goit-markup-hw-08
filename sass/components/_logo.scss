@@ -8,11 +8,11 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
 
-.logo__accent {
-  color: $accent-text-color;
-}
-.logo--white {
-  color: $background-color;
+  &__accent {
+    color: $accent-text-color;
+  }
+  &--white {
+    color: $background-color;
+  }
 }
