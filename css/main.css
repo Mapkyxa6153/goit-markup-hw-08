@@ -1,5 +1,17 @@
 @charset "UTF-8";
+/*цвета
+основной текст - #212121
+второстепенный текст - #757575
+акцент - #2196F3
+текст героя - #ffffff
+*/
 /* Убирает точки у списков */
+body {
+  color: #212121;
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -54,12 +66,6 @@ textarea {
   align-items: baseline;
 }
 
-/*цвета
-основной текст - #212121
-второстепенный текст - #757575
-акцент - #2196F3
-текст героя - #ffffff
-*/
 /* style of logo */
 .logo {
   margin-right: 93px;
@@ -331,6 +337,12 @@ textarea {
   height: auto;
 }
 
+@media (max-width: 1200px) {
+  .services-section {
+    display: none;
+  }
+}
+
 /* section Team */
 .team-section {
   padding: 94px 0;
@@ -367,6 +379,18 @@ textarea {
 
 .team-section__card:first-child {
   margin-left: 0;
+}
+
+.team-section__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .team-section__cards {
+    display: block;
+  }
 }
 
 .member {
@@ -1054,11 +1078,5 @@ textarea {
 .policy__checkbox:checked + .policy__icon {
   background-color: #2196f3;
   border: 0;
-}
-
-body {
-  color: #212121;
-  background-color: #ffffff;
-  font-family: Roboto, sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

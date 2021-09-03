@@ -35,6 +35,12 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .team-section__cards {
+    display: block;
+  }
+}
+
 .member {
   text-align: center;
   padding-top: 30px;
