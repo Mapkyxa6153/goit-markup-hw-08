@@ -52,8 +52,40 @@
           </li>
         </ul>
       </div>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-btn">
+          <use href="./images/icon/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
     <main>
+      <!-- mobile-menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-btn">
+            <use href="./images/icon/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+          </li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+        </ul>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a href="mailto:info@devstudio.com" class="header-contacts__link">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link"> +38 096 111 11 11 </a>
+          </li>
+        </ul>
+      </div>
       <!--Герой-->
       <section class="hero-section">
         <div class="container">
@@ -273,7 +305,12 @@
               </div>
             </li>
             <li class="team-section__card">
-              <img srcset="./images/14.jpg 1x, ./images/14x2.jpg 2x" src="./images/14.jpg" width="270" alt="man in black t-shirt" />
+              <img
+                srcset="./images/14.jpg 1x, ./images/14x2.jpg 2x"
+                src="./images/14.jpg"
+                width="270"
+                alt="man in black t-shirt"
+              />
               <div class="member">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p class="member__position">Designer</p>
@@ -495,5 +532,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
