@@ -1,40 +1,40 @@
 /* loyal customers */
 
 .customers {
-  // padding: 94px 0;
+  padding: 94px 0;
 
   &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    // text-align: center;
+    text-align: center;
     letter-spacing: 0.03em;
-    // margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   &__list {
-    // display: -webkit-box;
-    // display: -ms-flexbox;
-    // display: flex;
-    // -webkit-box-pack: justify;
-    // -ms-flex-pack: justify;
-    // justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   &__link {
-    // display: block;
+    display: block;
     border-radius: 4px;
     width: 170px;
     height: 92px;
     display: -webkit-box;
     display: -ms-flexbox;
-    // display: flex;
-    // -webkit-box-pack: center;
-    // -ms-flex-pack: center;
-    // justify-content: center;
-    // -webkit-box-align: center;
-    // -ms-flex-align: center;
-    // align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     -webkit-transition: background-color 250ms $timing-function, fill 250ms $timing-function;

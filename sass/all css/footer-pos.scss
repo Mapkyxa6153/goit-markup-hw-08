@@ -1,14 +1,14 @@
 /* footer */
 
 .footer {
-  // padding: 60px 0;
+  padding: 60px 0;
   background-color: $background-color-secondary;
 }
 
 // ADDRESS
 
 .address {
-  // margin-top: 20px;
+  margin-top: 20px;
 
   &__link {
     font-family: Roboto, sans-serif;
@@ -33,7 +33,7 @@
 }
 
 .footer-social {
-  // margin-left: 70px;
+  margin-left: 70px;
 
   &__title {
     color: $background-color;
@@ -48,13 +48,13 @@
 }
 
 .social--footer {
-  // margin-top: 20px;
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: flex;
-  // -webkit-box-pack: justify;
-  // -ms-flex-pack: justify;
-  // justify-content: space-between;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .social__link--footer {

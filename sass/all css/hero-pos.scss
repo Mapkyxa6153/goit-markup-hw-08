@@ -1,7 +1,7 @@
 /* hero section */
 .hero-section {
-  // padding: 200px 0;
-  // text-align: center;
+  padding: 200px 0;
+  text-align: center;
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -21,8 +21,8 @@
   background-color: $background-color-secondary;
 
   &__title {
-    // margin-top: 0;
-    // margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
     color: $background-color;
     font-size: 44px;
     line-height: 1.36;

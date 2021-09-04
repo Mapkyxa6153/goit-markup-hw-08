@@ -1,8 +1,15 @@
 @charset "UTF-8";
 
 @import './utils/variables';
+// BTNS
+@import './utils/buttons';
+
+// FORMS
+@import './utils/forms';
+
 @import './base/base';
-@import './components/logo';
+
+@import './layout/mobile-menu';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/strenghts';
@@ -16,9 +23,4 @@
 
 // MODAL WINDOW
 @import './components/modal-window';
-
-// BTNS
-@import './utils/buttons';
-
-// FORMS
-@import './utils/forms';
+@import './components/logo';
