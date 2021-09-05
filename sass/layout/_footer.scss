@@ -1,14 +1,24 @@
 /* footer */
 
 .footer {
-  // padding: 60px 0;
+  padding: 60px 0;
   background-color: $background-color-secondary;
+  text-align: center;
 }
 
 // ADDRESS
 
 .address {
-  // margin-top: 20px;
+  margin-top: 20px;
+
+  &__item {
+    &:not(last-child) {
+      margin-bottom: 8px;
+    }
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
 
   &__link {
     font-family: Roboto, sans-serif;
@@ -48,13 +58,14 @@
 }
 
 .social--footer {
-  // margin-top: 20px;
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: flex;
-  // -webkit-box-pack: justify;
-  // -ms-flex-pack: justify;
-  // justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
 }
 
 .social__link--footer {
