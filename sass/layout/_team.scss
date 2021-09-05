@@ -35,6 +35,11 @@
     // -webkit-box-pack: justify;
     // -ms-flex-pack: justify;
     // justify-content: space-between;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
   &__card {
     // -ms-flex-preferred-size: calc((100% / 4) - 30px);
@@ -58,6 +63,10 @@
       margin-bottom: 30px;
       &:last-child {
         margin-bottom: 0;
+      }
+      @media screen and(min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
       }
     }
 
