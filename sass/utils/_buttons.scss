@@ -7,7 +7,7 @@
   border: 0;
   margin-left: auto;
 
-  @media (min-width: 767px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
   &:focus,
@@ -34,6 +34,12 @@
   border: 0px;
   color: $background-color;
   background-color: $accent-text-color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 6%;
+  }
 }
 
 // MODAL FORM'S BTNS

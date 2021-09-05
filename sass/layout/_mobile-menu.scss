@@ -16,19 +16,22 @@
 }
 
 .menu-nav {
+  padding: 33px 0 0 25px;
   &__item {
     // margin-right: 50px;
+    margin-bottom: 32px;
 
     &:last-child {
       // margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
   &__link {
     // position: relative;
-    letter-spacing: 0.02em;
-    font-size: 14px;
-    line-height: 1.14;
+    letter-spacing: 2%;
+    font-size: 40px;
+    line-height: 1.18;
     font-weight: 500;
     text-decoration: none;
     color: $primary-text-color;
@@ -62,6 +65,8 @@
   // display: -ms-flexbox;
   // display: flex;
   // margin-left: auto;
+  padding-left: 25px;
+  margin-top: auto;
 
   &__item {
     &:nth-child(2) {
@@ -78,12 +83,12 @@
     // display: flex;
     // text-align: center;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 2%;
     // -webkit-box-align: center;
     // -ms-flex-align: center;
     // align-items: center;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
     color: $secondary-text-colort;
     -webkit-transition: color 250ms $timing-function, fill 250ms $timing-function;
@@ -95,11 +100,18 @@
       fill: $accent-text-color;
       outline: none;
     }
+    &--phone {
+      color: $accent-text-color;
+      text-decoration: none;
+      font-size: 34px;
+      line-height: 1.18;
+    }
   }
 }
 
 .menu-social {
   display: flex;
+  padding-left: 25px;
 
   &__item {
     margin-left: 20px;

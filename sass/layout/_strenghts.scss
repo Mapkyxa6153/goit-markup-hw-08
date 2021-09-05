@@ -16,6 +16,14 @@
 .strenghts-section {
   // padding-top: 94px;
   // padding-bottom: 0px;
+  @media screen and (min-width: 480px) {
+    padding: 60px 0;
+    text-align: center;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 60px 0;
+    text-align: center;
+  }
 
   &__list {
     // display: -webkit-box;
@@ -29,7 +37,11 @@
   &__item {
     // margin-left: 30px;
     // max-width: 270px;
+    margin-bottom: 30px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
     &:first-child {
       // margin-left: 0;
     }
@@ -41,9 +53,17 @@
     border-radius: 4px;
     // margin-bottom: 30px;
     background-color: $background-color-tertiary;
+    @media screen and (min-width: 480px) {
+      padding: 25px 0;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 479px) {
+      padding: 25px 0;
+      margin-bottom: 30px;
+    }
   }
   &__title {
-    // margin-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -58,6 +78,15 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $secondary-text-colort;
+
+    @media screen and (min-width: 480px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    @media screen and (max-width: 479px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
   &__icon {
     width: 70px;

@@ -2,14 +2,31 @@
 .team-section {
   // padding: 94px 0;
   background-color: $background-color-tertiary;
+  @media screen and (min-width: 480px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 60px 0;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    // text-align: center;
+    text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.19;
+    }
+    @media screen and (max-width: 479px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.19;
+    }
   }
   &__cards {
     // display: -webkit-box;
@@ -30,6 +47,20 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (max-width: 479px) {
+      // max-width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     &:first-child {
       // margin-left: 0;
     }
@@ -37,9 +68,16 @@
 }
 
 .member {
-  // text-align: center;
-  // padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
   // padding-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 24px;
+  }
+  @media screen and (max-width: 479px) {
+    padding-bottom: 24px;
+  }
 
   &__name {
     color: $primary-text-color;
@@ -47,10 +85,10 @@
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    // margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   &__position {
-    // margin-bottom: 16px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -60,12 +98,12 @@
 }
 
 .social {
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: flex;
-  // -webkit-box-pack: center;
-  // -ms-flex-pack: center;
-  // justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   &__icon {
     width: 20px;
@@ -74,15 +112,15 @@
   &__link {
     width: 44px;
     height: 44px;
-    // display: -webkit-box;
-    // display: -ms-flexbox;
-    // display: flex;
-    // -webkit-box-pack: center;
-    // -ms-flex-pack: center;
-    // justify-content: center;
-    // -webkit-box-align: center;
-    // -ms-flex-align: center;
-    // align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-radius: 50%;
     margin-right: 10px;
     fill: #afb1b8;
@@ -90,7 +128,7 @@
     transition: background-color 250ms $timing-function, fill 250ms $timing-function;
 
     &:last-child {
-      // margin-right: 0px;
+      margin-right: 0px;
     }
     &:focus,
     &:hover {
