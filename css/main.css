@@ -716,8 +716,10 @@ textarea {
 }
 
 .hero-section__title {
+  margin-bottom: 30px;
   color: #ffffff;
   font-size: 44px;
+  text-align: center;
   line-height: 1.36;
   font-weight: 900;
   text-transform: uppercase;
@@ -726,20 +728,16 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .hero-section__title {
-    margin-bottom: 30px;
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 6%;
-    text-align: center;
   }
 }
 
 @media screen and (max-width: 479px) {
   .hero-section__title {
-    margin-bottom: 30px;
     font-size: 26px;
     line-height: 1.62;
-    letter-spacing: 6%;
     text-align: center;
   }
 }
@@ -748,8 +746,8 @@ textarea {
   .hero-section__title {
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     font-weight: 900;
     letter-spacing: 0.06em;
   }
