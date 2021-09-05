@@ -1,5 +1,11 @@
 /* hero section */
 .hero-section {
+  @media screen and(min-width: 1200px) {
+    padding: 200px 0;
+  }
+  @media screen and(min-width: 768px) {
+    padding: 128px 0;
+  }
   padding: 60px 0;
   text-align: center;
   background-image: -webkit-gradient(
@@ -60,6 +66,16 @@
       line-height: 1.62;
       letter-spacing: 6%;
       text-align: center;
+    }
+    @media screen and(min-width: 1200px) {
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      font-size: 44px;
+      line-height: 1.36;
+      font-weight: 900;
+
+      letter-spacing: 0.06em;
     }
   }
 }

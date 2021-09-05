@@ -31,13 +31,13 @@
     letter-spacing: 0.06em;
   }
 }
-@media screen and (min-device-pixal-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolutino: 2dppx) {
-  .hero-section {
-    background-image: url(../../images/hero-overlayx2.jpg);
-  }
-}
+// @media screen and (min-device-pixal-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolutino: 2dppx) {
+//   .hero-section {
+//     background-image: url(../../images/hero-overlayx2.jpg);
+//   }
+// }
 
 // @media screen and (min-device-pixal-ratio: 1),
 //   screen and (min-resolution: 96dpi),
