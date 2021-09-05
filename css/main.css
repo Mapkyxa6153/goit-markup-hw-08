@@ -419,19 +419,19 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 550px;
+    max-width: 560px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 1000px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -554,6 +554,20 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__item {
+    margin-right: 50px;
+  }
+}
+
 .site-nav__link {
   letter-spacing: 0.02em;
   font-size: 14px;
@@ -607,6 +621,18 @@ textarea {
   background-position: center;
   background-size: cover;
   background-color: #2f303a;
+}
+
+@media screen and (min-device-pixal-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolutino: 2dppx) {
+  .hero-section .hero-section {
+    background-image: url(../../images/hero-overlayx2.jpg);
+  }
+}
+
+@media screen and (min-device-pixal-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 1), screen and (min-resolution: 96dpi), screen and (min-resolutino: 1dppx) {
+  .hero-section .hero-section {
+    background-image: url(../../images/hero-overlay.jpg);
+  }
 }
 
 .hero-section__title {
@@ -663,12 +689,42 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .strenghts-section {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .strenghts-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .strenghts-section__item {
   margin-bottom: 30px;
 }
 
 .strenghts-section__item:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .strenghts-section__item {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .strenghts-section__item {
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .strenghts-section__thumb {
@@ -700,6 +756,12 @@ textarea {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .strenghts-section__title {
+    text-align: left;
+  }
+}
+
 .strenghts-section__text {
   font-weight: 400;
   font-size: 14px;
@@ -708,17 +770,9 @@ textarea {
   color: #757575;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .strenghts-section__text {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .strenghts-section__text {
-    font-size: 14px;
-    line-height: 1.7;
+    text-align: left;
   }
 }
 
@@ -939,6 +993,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .customers {
+    padding: 60px 0;
+  }
+}
+
 .customers__title {
   font-weight: 700;
   font-size: 36px;
@@ -953,12 +1013,67 @@ textarea {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .customers__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .customers__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.customers__item {
+  width: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .customers__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .customers__item {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .customers__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
 .customers__link {
+  display: block;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

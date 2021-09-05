@@ -43,13 +43,13 @@ textarea {
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    width: 550px;
+    max-width: 560px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 1000px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    min-width: 1200px;
   }
   &--main-nav {
     // display: -webkit-box;

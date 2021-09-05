@@ -13,12 +13,29 @@
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-mobile.jpg);
   // max-width: 1600px;
+
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $background-color-secondary;
+
+  @media screen and (min-device-pixal-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolutino: 2dppx) {
+    .hero-section {
+      background-image: url(../../images/hero-overlayx2.jpg);
+    }
+  }
+
+  @media screen and (min-device-pixal-ratio: 1),
+    screen and (min-resolution: 96dpi),
+    screen and (min-resolutino: 1dppx) {
+    .hero-section {
+      background-image: url(../../images/hero-overlay.jpg);
+    }
+  }
 
   &__title {
     // margin-top: 0;
@@ -46,18 +63,3 @@
     }
   }
 }
-// @media screen and (min-device-pixal-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolutino: 2dppx) {
-//   .hero-section {
-//     background-image: url(../../images/hero-overlayx2.jpg);
-//   }
-// }
-
-// @media screen and (min-device-pixal-ratio: 1),
-//   screen and (min-resolution: 96dpi),
-//   screen and (min-resolutino: 1dppx) {
-//   .hero-section {
-//     background-image: url(../../images/hero-overlay.jpg);
-//   }
-// }

@@ -5,6 +5,9 @@
   @media (min-width: 480px) {
     padding: 60px 0;
   }
+  @media screen and(max-width: 479px) {
+    padding: 60px 0;
+  }
 
   &__title {
     font-weight: 700;
@@ -16,6 +19,12 @@
     @media (min-width: 480px) {
       margin-bottom: 30px;
     }
+    @media screen and(min-width: 480px) {
+      margin-bottom: 30px;
+    }
+    @media screen and(max-width: 479px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
@@ -25,22 +34,53 @@
     // -webkit-box-pack: justify;
     // -ms-flex-pack: justify;
     // justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (max-width: 479px) {
+    }
+  }
+  &__item {
+    width: 100%;
+    // display: block;
+    text-align: center;
+    align-items: center;
+    @media screen and (min-width: 480px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @media screen and(max-width: 479px) {
+      max-width: 60%;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    @media screen and(min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
   }
 
   &__link {
-    // display: block;
+    display: block;
     border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    // width: 170px;
+    // height: 92px;
+    // display: -webkit-box;
+    // display: -ms-flexbox;
     // display: flex;
     // -webkit-box-pack: center;
     // -ms-flex-pack: center;
     // justify-content: center;
     // -webkit-box-align: center;
     // -ms-flex-align: center;
-    // align-items: center;
+    align-items: center;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     -webkit-transition: background-color 250ms $timing-function, fill 250ms $timing-function;
@@ -52,6 +92,9 @@
       color: $accent-text-color;
       border-color: $accent-text-color;
       outline: none;
+    }
+    @media screen and (min-width: 480px) {
+      // display: block;
     }
   }
 }
