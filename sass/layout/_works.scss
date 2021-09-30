@@ -2,6 +2,9 @@
 
 .works-section {
   padding: 94px 0;
+  @media screen and(max-width: 1200px) {
+    padding: 60px 0;
+  }
 }
 
 .works {

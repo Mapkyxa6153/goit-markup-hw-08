@@ -23,8 +23,7 @@
     margin-bottom: 32px;
 
     &:last-child {
-      // margin-right: 0;
-      margin-bottom: 0;
+      // margin-bottom: 302px;
     }
   }
 
@@ -44,6 +43,10 @@
       color: $accent-text-color;
       outline: none;
     }
+    &--current {
+      color: $accent-text-color;
+    }
+
     // &::after {
     //   content: '';
     //   position: absolute;
@@ -72,6 +75,10 @@
   &__item {
     &:nth-child(2) {
       // margin-left: 50px;
+    }
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 64px;
     }
   }
 
@@ -122,6 +129,23 @@
   }
   &__link {
     text-decoration: none;
+    position: relative;
     color: $accent-text-color;
+
+    letter-spacing: 2%;
+    font-size: 18px;
+    line-height: 1.22;
+    font-weight: 500;
   }
+  // &__link::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 10px;
+  //   width: 1px;
+  //   height: 22px;
+
+  //   background-color: $secondary-text-colort;
+  //   display: block;
+  // }
 }
