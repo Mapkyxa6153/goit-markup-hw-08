@@ -4,10 +4,12 @@
   padding: 60px 0;
   background-color: $background-color-secondary;
   text-align: center;
+  @media screen and(min-width: 1200px) {
+    text-align: initial;
+  }
 }
 
 // ADDRESS
-
 .address {
   margin-top: 20px;
 

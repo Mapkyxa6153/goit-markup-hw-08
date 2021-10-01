@@ -74,15 +74,15 @@
     display: block;
     border-radius: 4px;
     // width: 170px;
-    // height: 92px;
-    // display: -webkit-box;
-    // display: -ms-flexbox;
-    // display: flex;
-    // -webkit-box-pack: center;
-    // -ms-flex-pack: center;
-    // justify-content: center;
-    // -webkit-box-align: center;
-    // -ms-flex-align: center;
+    height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
@@ -96,8 +96,8 @@
       border-color: $accent-text-color;
       outline: none;
     }
-    @media screen and (min-width: 480px) {
-      // display: block;
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
 }
