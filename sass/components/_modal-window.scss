@@ -8,6 +8,10 @@
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms $timing-function;
   transition: opacity 250ms $timing-function;
+
+  // @media screen and(max-width: 767px) {
+  //   padding: 93px 15px;
+  // }
 }
 
 .backdrop.is-hidden {
