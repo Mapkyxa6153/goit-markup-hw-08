@@ -12,13 +12,14 @@
 // ADDRESS
 .address {
   margin-top: 20px;
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   &__item {
-    &:not(last-child) {
-      margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
     &:last-child {
-      margin-bottom: 60px;
+      margin-bottom: 0px;
     }
   }
 
@@ -45,6 +46,10 @@
 }
 
 .footer-social {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-left: 165px;
   }
