@@ -39,7 +39,7 @@ textarea {
   // margin-left: auto;
   // margin-right: auto;
   // outline: 1px solid sandybrown;
-  outline: 1px solid aqua;
+
   margin: 0 auto;
 
   @media screen and (max-width: 767px) {
@@ -47,8 +47,6 @@ textarea {
   }
 
   @media screen and (min-width: 768px) {
-    // display: flex;
-    // justify-content: space-around;
     max-width: 768px;
   }
   @media screen and (min-width: 1200px) {

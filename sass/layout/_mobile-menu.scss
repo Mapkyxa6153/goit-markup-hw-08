@@ -124,16 +124,7 @@
     font-size: 18px;
     line-height: 1.22;
     font-weight: 500;
-    // &--after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: -10px;
-    //   width: 1px;
-    //   height: 22px;
-    //   background-color: rgba(33, 33, 33, 0.2);
-    // }
-    &:not(:first-child)::after {
+    &::after {
       content: '';
       position: absolute;
       top: 0;
@@ -144,15 +135,12 @@
     }
   }
 }
-// &__link::after {
-// content: '';
-// position: absolute;
-// top: 0;
-// left: -10px;
-// width: 1px;
-// height: 22px;
-// background-color: rgba(33, 33, 33, 0.2);
-// }
-// &__link:first-child ::after {
-//   display: none;
+// &__link:not(:first-child)::after {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: -10px;
+//   width: 1px;
+//   height: 22px;
+//   background-color: rgba(33, 33, 33, 0.2);
 // }
