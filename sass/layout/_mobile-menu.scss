@@ -110,12 +110,11 @@
 .menu-social {
   display: flex;
   padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
 
-  &__item {
-    margin-left: 20px;
-    &:first-child {
-      margin-left: 0;
-    }
+  &__item:not(:last-child) {
+    margin-right: 20px;
   }
   &__link {
     text-decoration: none;
@@ -125,17 +124,35 @@
     font-size: 18px;
     line-height: 1.22;
     font-weight: 500;
-  }
-  &__link::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -10px;
-    width: 1px;
-    height: 22px;
-    background-color: rgba(33, 33, 33, 0.2);
-  }
-  &__link:first-child ::after {
-    display: none;
+    // &--after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: -10px;
+    //   width: 1px;
+    //   height: 22px;
+    //   background-color: rgba(33, 33, 33, 0.2);
+    // }
+    &:not(:first-child)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
   }
 }
+// &__link::after {
+// content: '';
+// position: absolute;
+// top: 0;
+// left: -10px;
+// width: 1px;
+// height: 22px;
+// background-color: rgba(33, 33, 33, 0.2);
+// }
+// &__link:first-child ::after {
+//   display: none;
+// }

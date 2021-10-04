@@ -85,9 +85,19 @@
           </li>
         </ul>
         <ul class="menu-social">
-          <li class="menu-social__item"><a class="menu-social__link" href="#">Inastagram</a></li>
-          <li class="menu-social__item"><a class="menu-social__link" href="#">Twitter</a></li>
-          <li class="menu-social__item"><a class="menu-social__link" href="#">Facebook</a></li>
+          <li class="menu-social__item">
+            <a
+              class="menu-social__link menu-social__link menu-social__link menu-social__link--after"
+              href="#"
+              >Inastagram</a
+            >
+          </li>
+          <li class="menu-social__item">
+            <a class="menu-social__link" href="#">Twitter</a>
+          </li>
+          <li class="menu-social__item">
+            <a class="menu-social__link" href="#">Facebook</a>
+          </li>
           <li class="menu-social__item"><a class="menu-social__link" href="#">LinkedIn</a></li>
         </ul>
       </div>
@@ -173,8 +183,8 @@
             <li>
               <div class="services-section__item">
                 <img
-                  srcset="./images/2.jpg 1x, ./images/2x2.jpg 2x"
-                  src="./images/2.jpg"
+                  srcset="./images/mob-designs-x1.jpg 1x, ./images/mob-designs-x2.jpg 2x"
+                  src="./images/mob-designs-x1.jpg"
                   alt="Person is chosing new phone"
                   width="370"
                   class="img"
@@ -185,8 +195,8 @@
             <li>
               <div class="services-section__item">
                 <img
-                  srcset="./images/3.jpg 1x, ./images/3x2.jpg 2x"
-                  src="./images/3.jpg"
+                  srcset="./images/colors-x1.jpg 1x, ./images/colors-x2.jpg 2x"
+                  src="./images/colors-x1.jpg"
                   alt="Showing available colors"
                   width="370"
                   class="services-section__img"
@@ -205,12 +215,21 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__cards">
             <li class="team-section__card">
-              <img
-                srcset="./images/11.jpg 1x, ./images/11x2.jpg 2x"
-                src="./images/11.jpg"
-                alt="Happy man with glasses"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/igor-desk-x1.jpg 1x, ./images/igor-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/igor-tab-x1.jpg 1x, ./images/igor-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/igor-mob-x1.jpg 1x, ./images/igor-mob-x2.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/igor-desk-x1.jpg" alt="Our product designer" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p class="member__position">Product Designer</p>
@@ -240,12 +259,21 @@
               </div>
             </li>
             <li class="team-section__card">
-              <img
-                srcset="./images/12.jpg 1x, ./images/12x2.jpg 2x"
-                src="./images/12.jpg"
-                alt="blonde woman"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga-desk-x1.jpg 1x, ./images/olga-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/olga-tab-x1.jpg 1x, ./images/olga-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/olga-mob-x1.jpg 1x, ./images/olga-mob-x2.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/olga-desk-x1.jpg" alt="Our developer" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Ольга Репина</h3>
                 <p class="member__position">Developer</p>
@@ -275,11 +303,21 @@
               </div>
             </li>
             <li class="team-section__card">
-              <img
-                srcset="./images/13.jpg 1x, ./images/13x2.jpg 2x"
-                src="./images/13.jpg"
-                alt="man in light blue shirt"
-              />
+              <picture>
+                <source
+                  srcset="./images/niko-desk-x1.jpg 1x, ./images/niko-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/niko-tab-x1.jpg 1x, ./images/niko-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/niko-mob-x1.jpg 1x, ./images/niko-mob-x2.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/niko-desk-x1.jpg" alt="Our marketing specialist" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Николай Тарасов</h3>
                 <p class="member__position">Marketing</p>
@@ -309,11 +347,21 @@
               </div>
             </li>
             <li class="team-section__card">
-              <img
-                srcset="./images/14.jpg 1x, ./images/14x2.jpg 2x"
-                src="./images/14.jpg"
-                alt="man in black t-shirt"
-              />
+              <picture>
+                <source
+                  srcset="./images/miha-desk-x1.jpg 1x, ./images/miha-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/miha-tab-x1.jpg 1x, ./images/miha-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/miha-mob-x1.jpg 1x, ./images/miha-mob-x2.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/miha-desk-x1.jpg" alt="Our designer" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p class="member__position">Designer</p>

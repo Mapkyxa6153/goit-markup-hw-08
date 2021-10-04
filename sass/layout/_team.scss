@@ -54,16 +54,21 @@
 
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
       &:last-child {
         margin-bottom: 0;
       }
     }
     @media screen and(min-width: 768px) {
-      width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
+      width: calc((100% - 4 * 30px) / 2);
+      // max-width: 354px;
+      margin: 30px;
     }
     @media screen and(min-width: 1200px) {
       width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
     }
   }
 }

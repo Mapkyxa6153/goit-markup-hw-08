@@ -146,11 +146,9 @@
   }
 }
 
-.btn-item {
-  margin-left: 8px;
-  &:first-child {
-    margin-left: 0;
-  }
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 // FOOTER FOLLOW BTN
