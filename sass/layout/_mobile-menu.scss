@@ -135,4 +135,7 @@
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);
   }
+  &__link:first-child ::after {
+    display: none;
+  }
 }
