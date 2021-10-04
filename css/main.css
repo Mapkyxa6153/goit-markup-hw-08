@@ -434,7 +434,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -793,15 +793,15 @@ textarea {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero-section {
-    padding: 200px 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero-section {
     padding: 128px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding: 200px 0;
   }
 }
 
@@ -1618,10 +1618,17 @@ textarea {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .modal {
     position: relative;
     width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
   }
 }
 

@@ -51,9 +51,13 @@
   border-radius: 4px;
   background-color: $background-color;
 
-  @media screen and(max-width: 1199px) {
+  @media screen and(max-width: 767px) {
     position: relative;
     width: 100%;
+    max-width: 450px;
+  }
+  @media screen and(min-width: 768px) {
+    max-width: 450px;
   }
   @media screen and(min-width: 1200px) {
     width: 528px;
